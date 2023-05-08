@@ -1,0 +1,26 @@
+.item {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 3px grey;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.avatar {
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 20px;
+}
