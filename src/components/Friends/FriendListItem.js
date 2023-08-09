@@ -4,7 +4,7 @@ import css from './FriendListItem.module.css';
 const onlineMarkerColor = 'green';
 const offlineMarkerColor = 'red';
 
-export default function FriendListItem({ avatar, name, isOnline }) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
     <li className={css.item}>
       {isOnline ? (
@@ -29,3 +29,5 @@ FriendListItem.propTypes = {
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool,
 };
+
+export default FriendListItem;

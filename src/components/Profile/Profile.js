@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
-export default function Profile({ username, tag, location, avatar, stats }) {
+function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -38,3 +38,5 @@ Profile.propTypes = {
   views: PropTypes.number,
   likes: PropTypes.number,
 };
+
+export default Profile;

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
-export default function Statistics({ title, stats }) {
+function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
@@ -37,3 +37,5 @@ Statistics.propTypes = {
   label: PropTypes.string,
   percentage: PropTypes.number,
 };
+
+export default Statistics;
